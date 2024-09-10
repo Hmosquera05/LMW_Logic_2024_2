@@ -8,64 +8,64 @@
 
         // aqui ingresamos las variables 
         Console.WriteLine("Ingrese el primer número:");
-        int num1 = Convert.ToInt32(Console.ReadLine());
+        int número1 = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("Ingrese el segundo número:");
-        int num2 = Convert.ToInt32(Console.ReadLine());
+        int número2 = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("Ingrese el tercer número:");
-        int num3 = Convert.ToInt32(Console.ReadLine());
+        int número3 = Convert.ToInt32(Console.ReadLine());
 
         // Declaramos variables para los valores mayor, medio y menor
         int mayor, medio, menor;
 
         // en esta parte comparamos los números para encontrar el mayor, el medio y el menor
-        if (num1 > num2 && num1 > num3)
+        if (número1 > número2 && número1 > número3)
         {
-            mayor = num1;
-            if (num2 > num3)
+            mayor = número1;
+            if (número2 > número3)
             {
-                medio = num2;
-                menor = num3;
+                medio = número2;
+                menor = número3;
             }
             else
             {
-                medio = num3;
-                menor = num2;
+                medio = número3;
+                menor = número2;
             }
         }
-        else if (num2 > num1 && num2 > num3)
+        else if (número2 > número1 && número2 > número3)
         {
-            mayor = num2;
-            if (num1 > num3)
+            mayor = número2;
+            if (número1 > número3)
             {
-                medio = num1;
-                menor = num3;
+                medio = número1;
+                menor = número3;
             }
             else
             {
-                medio = num3;
-                menor = num1;
+                medio = número3;
+                menor = número1;
             }
         }
         else
         {
-            mayor = num3;
-            if (num1 > num2)
+            mayor = número3;
+            if (número1 > número2)
             {
-                medio = num1;
-                menor = num2;
+                medio = número1;
+                menor = número2;
             }
             else
             {
-                medio = num2;
-                menor = num1;
+                medio = número2;
+                menor = número1;
             }
         }
 
         // en esta parte mostramos los resultados solicitados 
-        Console.WriteLine($"El mayor es: {mayor}");
-        Console.WriteLine($"El número intermedio es: {medio}");
-        Console.WriteLine($"El menor es: {menor}");
+        Console.WriteLine($"El número mayor es: {mayor}");
+        Console.WriteLine($"El número del medio es: {medio}");
+        Console.WriteLine($"El número menor es: {menor}");
     }
 }
